@@ -163,7 +163,7 @@ export default function SettingsPage() {
           <button onClick={handleUpgrade} disabled={checkoutLoading} className="btn-primary">
             {checkoutLoading
               ? <span className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-              : <><Crown size={16} /> Upgrade to Premium — $12/mo</>
+              : <><Crown size={16} /> Upgrade to Premium — $3/mo</>
             }
           </button>
         ) : (

@@ -111,7 +111,7 @@ export default function DashboardHome() {
               </div>
               <div>
                 <p className="font-medium text-slate-900 text-sm">Upload Resume</p>
-                <p className="text-xs text-slate-500">PDF or DOCX, up to 5MB</p>
+                <p className="text-xs text-slate-500">PDF, up to 5MB</p>
               </div>
               <ArrowRight size={16} className="ml-auto text-slate-400 group-hover:text-brand-600 transition-colors" />
             </Link>

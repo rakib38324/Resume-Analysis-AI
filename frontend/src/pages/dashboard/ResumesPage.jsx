@@ -33,8 +33,8 @@ function UploadZone({ onUploaded }) {
     onDrop,
     accept: { 
       'application/pdf': ['.pdf'], 
-      'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'],
-      'application/msword': ['.doc'] 
+      // 'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'],
+      // 'application/msword': ['.doc'] 
      },
     maxFiles: 1,
     disabled: uploading,
@@ -62,7 +62,7 @@ function UploadZone({ onUploaded }) {
             {isDragActive ? 'Drop your resume here' : 'Drag & drop your resume'}
           </p>
           <p className="text-sm text-slate-500 mb-3">or click to browse files</p>
-          <p className="text-xs text-slate-400">PDF or DOCX · Max 5MB</p>
+          <p className="text-xs text-slate-400">PDF · Max 5MB</p>
         </>
       )}
     </div>
@@ -176,7 +176,7 @@ export default function ResumesPage() {
     <div className="page-container space-y-6">
       <div>
         <h1 className="section-title">My Resumes</h1>
-        <p className="text-slate-500 mt-1">Upload and manage your resumes. We support PDF and DOCX formats.</p>
+        <p className="text-slate-500 mt-1">Upload and manage your resumes. We support only PDF and DOCX formats is comming soon.</p>
       </div>
 
       <UploadZone onUploaded={handleUploaded} />
