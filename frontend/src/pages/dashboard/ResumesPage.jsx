@@ -31,7 +31,11 @@ function UploadZone({ onUploaded }) {
 
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: { 'application/pdf': ['.pdf'], 'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'] },
+    accept: { 
+      'application/pdf': ['.pdf'], 
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document': ['.docx'],
+      'application/msword': ['.doc'] 
+     },
     maxFiles: 1,
     disabled: uploading,
   });
